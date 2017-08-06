@@ -12,20 +12,9 @@
 
  <properties>
 	  <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-	<!--    <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath> -->
+	 <sonar.jacoco.reportPath>${project.basedir}/../target/surefire-reports</sonar.jacoco.reportPath> 
 	  <sonar.language>java</sonar.language>
-	  <coverage.reports.dir>
-  ${basedir}/target/coverage-reports
-</coverage.reports.dir>
-<sonar.jacoco.reportPath>
-  ${coverage.reports.dir}/jacoco-unit.exec
-</sonar.jacoco.reportPath>
-<sonar.jacoco.itReportPath>
-  ${coverage.reports.dir}/jacoco-it.exec
-</sonar.jacoco.itReportPath>
-<sonar.jacoco.jar>
-  ${basedir}/lib/jacocoagent.jar
-</sonar.jacoco.jar>
+
 </properties>
 
 <dependencies>
